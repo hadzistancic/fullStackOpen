@@ -2,6 +2,7 @@
 sequenceDiagram
     participant Browser
     participant Server
+    note left of Browser: Browser sends user input to server
     Browser->>Server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note
     note right of Server: server creates a new note object and adds it to array
     Server->>Browser: URL redirect to https://studies.cs.helsinki.fi/exampleapp/notes
